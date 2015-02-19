@@ -8,15 +8,15 @@
     <license>Apache</license>
     <keywords>cordova,flurry</keywords>
 
-    <js-module src="www/flurry.js" name="Flurry">
-        <clobbers target="Flurry" />
+    <js-module src="www/flurry.js" name="flurry">
+        <clobbers target="flurry" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FlurryPlugin" >
-                <param name="android-package" value="com.mcflurry.Flurry" />
+                <param name="android-package" value="com.mcflurry.flurry" />
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
