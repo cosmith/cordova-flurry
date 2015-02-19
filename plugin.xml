@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-           id="com.phonegap.plugins.flurry"
+           id="com.phonegap.plugins.mcflurry"
       version="1.0.0">
     <name>Flurry</name>
     <description>Flurry Analytics for Apahe Cordova</description>
@@ -16,12 +16,13 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FlurryPlugin" >
-                <param name="android-package" value="com.phonegap.plugins.flurry.Flurry" />
+                <param name="android-package" value="com.phonegap.plugins.mcflurry.Flurry" />
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         </config-file>
+
 
         <source-file src="src/android/FlurryAnalytics_3.3.0.jar" target-dir="libs" framework="true" />
         <source-file src="src/android/Flurry.java" target-dir="src/com/phonegap/plugins/flurry" />
