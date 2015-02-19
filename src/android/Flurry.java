@@ -1,4 +1,4 @@
-package com.mcflurry;
+package com.mcflurry.flurry;
 
 import java.util.HashMap;
 import java.util.Iterator;
