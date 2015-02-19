@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-           id="com.phonegap.plugins.mcflurry"
+           id="com.mcflurry"
       version="1.0.0">
-    <name>Flurry</name>
+    <name>mcFlurry</name>
     <description>Flurry Analytics for Apahe Cordova</description>
     <license>Apache</license>
     <keywords>cordova,flurry</keywords>
@@ -16,7 +16,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FlurryPlugin" >
-                <param name="android-package" value="com.phonegap.plugins.mcflurry.Flurry" />
+                <param name="android-package" value="com.mcflurry.Flurry" />
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
