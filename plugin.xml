@@ -16,7 +16,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FlurryPlugin" >
-                <param name="android-package" value="com.mcflurry.flurry" />
+                <param name="android-package" value="com.mcflurry.flurry.Flurry" />
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
@@ -24,7 +24,7 @@
         </config-file>
 
 
-        <source-file src="src/android/FlurryAnalytics-5.3.0.jar" target-dir="libs" framework="true" />
+        <source-file src="src/android/FlurryAnalytics-5.5.0.jar" target-dir="libs" framework="true" />
         <source-file src="src/android/Flurry.java" target-dir="src/com/phonegap/plugins/flurry" />
     </platform>
     <!-- /android -->
