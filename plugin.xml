@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-           id="com.mcflurry.flurry"
+           id="fr.csmith.plugins.flurry"
       version="1.0.0">
     <name>mcFlurry</name>
     <description>Flurry Analytics for Apahe Cordova</description>
@@ -9,23 +9,24 @@
     <keywords>cordova,flurry</keywords>
 
     <js-module src="www/flurry.js" name="flurry">
-        <clobbers target="flurry" />
+        <clobbers target="fr.csmith.plugins.flurry" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FlurryPlugin" >
-                <param name="android-package" value="com.mcflurry.flurry.Flurry" />
+                <param name="android-package" value="fr.csmith.plugins.flurry.Flurry" />
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         </config-file>
 
-
         <source-file src="src/android/FlurryAnalytics-5.5.0.jar" target-dir="libs" framework="true" />
-        <source-file src="src/android/Flurry.java" target-dir="src/com/phonegap/plugins/flurry" />
+        <source-file src="src/android/Flurry.java" target-dir="src/fr/csmith/plugins/flurry" />
+
     </platform>
     <!-- /android -->
 
